@@ -1,4 +1,3 @@
-
 name: Spring Boot Maven CI with Wrapper
 
 on:
@@ -30,4 +29,3 @@ jobs:
       with:
         name: springboot-jar
         path: target/*.jar
-
