@@ -22,7 +22,7 @@ pipeline {
         }    
         stage('3. Docker build(이미지 만들기)') {
             steps {
-                sh 'docker build -t ex02-app:latest'
+                sh 'docker build -t ex02-app:latest .'
             }
         }    
     }
