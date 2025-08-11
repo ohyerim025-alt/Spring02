@@ -1,0 +1,8 @@
+pod:
+  name: ex02-app
+
+image:
+  repository: belokana/ex02-app
+  tag: latest
+
+containerPort: 8081
