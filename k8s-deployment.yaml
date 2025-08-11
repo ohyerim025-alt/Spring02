@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ex02-app
+  labels:
+    app: ex02-app
+spec:
+  containers:
+    - name: ex02-app
+      image: dhgpfla/ex02-app:latest
+      ports:
+        - containerPort: 8081
