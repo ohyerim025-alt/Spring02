@@ -1,8 +1,8 @@
 pod:
-name: ex02-app
+  name: ex02-app
 
 image:
-repository: dhgpfla/ex02-app
-tag: latest
+  repository: belokana/ex02-app
+  tag: latest
 
 containerPort: 8081
