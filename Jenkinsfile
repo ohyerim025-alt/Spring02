@@ -55,7 +55,7 @@ pipeline {
         */
         
 
-       stage('6. Deploy with Helm') {
+        stage('6. Deploy with Helm') {
             steps {
                 sh '''
                 export KUBECONFIG=/home/vagrant/.kube/config                
@@ -63,6 +63,7 @@ pipeline {
                 '''
             }
         }        
+
 
 
     }
