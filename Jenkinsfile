@@ -59,7 +59,7 @@ pipeline {
             steps {
                 sh '''
                 export KUBECONFIG=/home/vagrant/.kube/config                
-                helm upgrade --install ex01-app ./charts/ex01-app --namespace default
+                helm upgrade --install ex02-app ./charts/ex02-app --namespace default
                 '''
             }
         }        
