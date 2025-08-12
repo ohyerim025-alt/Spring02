@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('0. 자동화 확인12') { steps { echo '스테이지 출발' } }
+        stage('0. 자동화 확인1') { steps { echo '스테이지 출발' } }
         
         stage('1. Build') {
             steps {
@@ -23,7 +23,7 @@ pipeline {
         
         stage('3. Docker Build') {
             steps {
-                sh 'docker build -t ex01-app:latest .'
+                sh 'docker build -t ex02-app:latest .'
             }
         }
 
