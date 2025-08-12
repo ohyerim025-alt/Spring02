@@ -43,6 +43,7 @@ pipeline {
             }
         }
         */
+        /*
         stage('5. Deploy to K3s') {
             steps {
                 sh '''
@@ -51,6 +52,18 @@ pipeline {
                 '''
             }
         }
+        */
+        
+
+        stage('6. Deploy with Helm') {
+            steps {
+                sh '''
+                export KUBECONFIG=/home/vagrant/.kube/config                
+                helm upgrade --install ex01-app ./charts/ex01-app --namespace default
+                '''
+            }
+        }        
+
     }
 }
 
